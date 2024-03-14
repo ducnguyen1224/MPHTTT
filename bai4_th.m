@@ -1,28 +1,28 @@
-% Khai b·o bien
+% Khai b√°o bien
 h = 0.1;            % buoc thoi gian
 x0 = 0;             % gia tri ban dau cua x
 y0 = 1;             % gia tri ban cua cua y
-xn = 2;             % gia tri cua x tai diem ket th˙c
+xn = 2;             % gia tri cua x tai diem ket th√∫c
 
-% TÌnh to·n
+% T√≠nh to√°n
 x = x0:h:xn;
 y = zeros(size(x));
 y(1) = y0;
 
 for i = 1:length(x)-1
-    y(i+1) = y(i) + h * (4 * x(i)^2 + x(i) - 24 * y(i));
+    y(i+1) = y(i) + h * (2*a * x(i)^2 + x(i) - 6*b * y(i));
 end
 %a)
 % ve 
 plot(x, y);
 xlabel('x');
 ylabel('y');
-title('phuong trinh y'' = 4x^2 + x - 24y bang pp Euler');
+title('phuong trinh y'' = 10x^2 + x - 18y bang pp Euler');
 %b)tinh nguyen ham 
 
 int_y = cumtrapz(x, y);
 
-% V? ?? th? c?a h‡m y v‡ nguyÍn h‡m
+% V? ?? th? c?a h√†m y v√† nguy√™n h√†m
 subplot(2,1,1);
 plot(x, y);
 xlabel('x');
