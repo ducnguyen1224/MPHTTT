@@ -1,10 +1,10 @@
 % B21DCVT135
 a = 1;
 b = 5;
-c = 2 * b - a;
+c = a+b+2;
 
 % a
-disp('ý A');
+disp('Ã½ A');
 A = [a -b -c; c 2*b -a; a c -3*c];
 B = [10; 5; 2];
 disp('matrix A:');
@@ -13,18 +13,18 @@ disp(A);
 disp('matrix B:');
 disp(B);
 % b
-disp('ý b');
+disp('Ã½ b');
 new_size=b+4;
 extended_A = ones(new_size);
 
-% giá tr? c?a các ph?n t? trong ph?n m? r?ng b?ng giá tr? a
+% giÃ¡ tr? c?a cÃ¡c ph?n t? trong ph?n m? r?ng b?ng giÃ¡ tr? a
 new_A(:,:) = a;
-%  giá tr? c?a ph?n t? t?i hàng (b+4) c?t (b+4) b?ng 10
+%  giÃ¡ tr? c?a ph?n t? t?i hÅ•ng (b+4) c?t (b+4) b?ng 10
 new_A(b+4, b+4) = 10;
 disp('Ma tr?n A sau khi m? r?ng:');
 disp(new_A);
 % c 
-disp('ý C');
+disp('Ã½ C');
 C= randi([0,1],5 ,10);
-disp('ma tr?n ng?u nhiên ')
+disp('ma tr?n ng?u nhiÄ™n ')
 disp(C);
