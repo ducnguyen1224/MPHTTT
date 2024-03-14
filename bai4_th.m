@@ -3,7 +3,8 @@ h = 0.1;            % buoc thoi gian
 x0 = 0;             % gia tri ban dau cua x
 y0 = 1;             % gia tri ban cua cua y
 xn = 2;             % gia tri cua x tai diem ket thúc
-
+a=5;
+b=3;
 % Tính toán
 x = x0:h:xn;
 y = zeros(size(x));
