@@ -28,3 +28,9 @@ disp('ý C');
 C= randi([0,1],5 ,10);
 disp('ma tr?n ng?u nhięn ')
 disp(C);
+%d
+disp('y d');
+N=(a*b)+2;
+
+fib_N =Fibonnaci(N);
+disp(fib_N);
